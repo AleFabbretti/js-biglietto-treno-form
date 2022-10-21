@@ -36,4 +36,8 @@ btnGenerator.addEventListener(`click`, function() {
     // stampo prezzo biglietto con eventuale scontistica applicata su console
     console.log(`${price.toFixed(2)}€`);
     console.log(message);
+
+    const ticket = document.querySelector(".ticket");
+
+    const carriage = Math.floor(Math.random() * 10) + 1;
 })
