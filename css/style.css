@@ -8,8 +8,42 @@
 /* COMMON */
 .container{
     width: 50rem;
-    background-color: red;
+    background-color: #b91450;
     margin: auto;
+    color: white;
+    padding: 3.125rem;
+    text-align: center;
 }
 
 /* MAIN */
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    margin: 0 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+form{
+    background-color: white;
+    border-radius: .5rem;
+    color: #b91450;
+    height: 12.5rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+input,select {
+    border: 2px solid #b91450;
+    padding: .3125rem;
+    border-radius: .3125rem;
+}

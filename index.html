@@ -9,39 +9,45 @@
 </head>
 <body>
     <!-- main -->
-    <section class="input-ticket">
-        <div class="container">
-            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <div>
-                <form action="">
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div>
+            <form action="">
+                <div class="row">
         <!-- primo input -->
-                    <label for="Name">Nome e Cognome</label>
-                    <input type="text" name="name" id="name">
+                    <div class="col">
+                        <label for="Name">Nome e Cognome</label>
+                        <input type="text" name="name" id="name">
+                    </div>
         <!-- /primo input -->
 
         <!-- secondo input -->
-                    <label for="km">km da percorrere</label>
-                    <input type="text" name="km" id="km">
+                    <div class="col">
+                        <label for="km">km da percorrere</label>
+                        <input type="text" name="km" id="km">
+                    </div>
         <!-- /secondo input -->
 
         <!-- select -->
-                    <label for="age">Fascia d'età</label>
-                    <select name="age" id="age">
-                        <option value="underage">minorenne</option>
-                        <option value="adult">maggiorenne</option>
-                        <option value="over65">over 65</option>
-                    </select>
+                    <div class="col">
+                        <label for="age">Fascia d'età</label>
+                        <select name="age" id="age">
+                            <option value="underage">minorenne</option>
+                            <option value="adult">maggiorenne</option>
+                            <option value="over65">over 65</option>
+                        </select>
+                    </div>
         <!-- /select -->
+                </div>
 
         <!-- bottoni -->
                     <button class="btn-generator" type="button">Genera</button>
                     <button class="cancel" type="button">Annulla</button>
         <!-- /bottoni -->
 
-                </form>
-            </div>
+            </form>
         </div>
-    </section>
+    </div>
     <!-- /main -->
 
     <script src="js/main.js"></script>

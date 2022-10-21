@@ -27,7 +27,7 @@ btnGenerator.addEventListener(`click`, function() {
         message = "Biglietto per Adulti"
     }
 
-    // stampo prezzo biglietto con eventuale scontistica applicata
+    // stampo prezzo biglietto con eventuale scontistica applicata su console
     console.log(`${price.toFixed(2)}€`);
     console.log(message);
 })
