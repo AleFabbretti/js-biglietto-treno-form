@@ -1,6 +1,10 @@
 const btnGenerator = document.querySelector(".btn-generator");
 const btnCancel = document.querySelector(".btn-cancel");
-
+const generatorNameElement = document.querySelector(".name-surname");
+const generatorOfferElement = document.querySelector(".offer");
+const generatorCarriageElement = document.querySelector(".carriage");
+const generatorCpElement = document.querySelector(".cp-code");
+const generatorPriceElement = document.querySelector(".price");
 
 btnGenerator.addEventListener(`click`, function() {
     // chiedi all'utente il nome e il cognome
