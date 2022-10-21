@@ -57,3 +57,42 @@ button{
     font-size: 15px;
     font-weight: bold;
 }
+
+.ticket{
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 1.875rem;
+}
+
+/* .d-none{
+    display: none;
+} */
+
+.col-small{
+    width: 30%;
+    background-color: #808080;
+}
+
+.col-big{
+    width: 70%;
+    justify-content: space-evenly;
+    padding-top: .625rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+.ticket .row{
+    justify-content: space-between;
+}
+
+span {
+    font-size: 1.25rem;
+    padding-top: 1.25rem;
+    display: block;
+}
+
+.column{
+    display: flex;
+}
