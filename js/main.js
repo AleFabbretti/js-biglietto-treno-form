@@ -38,7 +38,7 @@ btnGenerator.addEventListener(`click`, function() {
     console.log(message);
 
     const ticket = document.querySelector(".ticket");
-
+    // aggiungo variabili per calcolare la carrozza e il numero randomico per il codice CP
     const carriage = Math.floor(Math.random() * 10) + 1;
     const cpRandom = Math.floor(Math.random() * 9999) + 90000;
 })
