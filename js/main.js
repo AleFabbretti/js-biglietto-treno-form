@@ -1,4 +1,6 @@
 const btnGenerator = document.querySelector(".btn-generator");
+const btnCancel = document.querySelector(".btn-cancel");
+
 
 btnGenerator.addEventListener(`click`, function() {
     // chiedi all'utente il nome e il cognome
