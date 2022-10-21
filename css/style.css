@@ -1,0 +1,15 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* COMMON */
+.container{
+    width: 50rem;
+    background-color: red;
+    margin: auto;
+}
+
+/* MAIN */
