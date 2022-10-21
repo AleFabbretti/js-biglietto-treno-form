@@ -40,4 +40,5 @@ btnGenerator.addEventListener(`click`, function() {
     const ticket = document.querySelector(".ticket");
 
     const carriage = Math.floor(Math.random() * 10) + 1;
+    const cpRandom = Math.floor(Math.random() * 9999) + 90000;
 })
