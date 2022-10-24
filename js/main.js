@@ -20,22 +20,20 @@ btnGenerator.addEventListener(`click`, function() {
 
     // crea una variabile in base al prezzo al km (pari a 0.21€)
     let price = km * 0.21;
+    let offert = "Biglietto standard";
 
     // crea delle condizioni per applicare lo sconto in base all'età dell'utente
-    if (age === "minorenne") {
+    if (age === `underage`) {
         price -= price * 0.20;
-        message = "Biglietto per minorenni" 
-    } else if (age === "over-65") {
+        offert = "Biglietto per minorenni" 
+    } else if (age === `over`) {
         price -= price * 0.40;
-        message = "Biglietto per over 65"
-    } else {
-        price = km * 0.21;
-        message = "Biglietto per Adulti"
-    }
+        offert = "Biglietto per over 65"
+    } 
 
     // stampo prezzo biglietto con eventuale scontistica applicata su console
     console.log(`${price.toFixed(2)}€`);
-    console.log(message);
+    console.log(`message`);
 
     const ticketElement = document.querySelector(".ticket");
     // aggiungo variabili per calcolare la carrozza e il numero randomico per il codice CP
@@ -44,7 +42,7 @@ btnGenerator.addEventListener(`click`, function() {
 
     //ricavo i dati forniti dall'utente nella pagina 
     generatorNameElement.innerHTML = nameSurname;
-    generatorOfferElement.innerHTML = message;
+    generatorOfferElement.innerHTML = offert;
     generatorCarriageElement.innerHTML = carriage;
     generatorCpElement.innerHTML = cpRandom;
     generatorPriceElement.innerHTML = (`${price.toFixed(2)}€`);
